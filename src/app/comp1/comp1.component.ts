@@ -21,11 +21,11 @@ export class ComHeaderComponent implements OnInit{
  }
  
  increment(){
-  this.abcdService.increment();
+  this.abcdService.increment1();
   }
 
   decrement(){
-    this.abcdService.decrement();
+    this.abcdService.decrement1();
   }
  ngOnInit(): void {
       

@@ -10,14 +10,13 @@ export class AbcdService {
 
   constructor() { }
 
-increment() {
+increment1() {
   this.subject.next(this.subject.value + 1);
 }
 
-decrement() {
+decrement1() {
 if(this.subject.value>0){
   this.subject.next(this.subject.value - 1);
-
 }
 }
 
