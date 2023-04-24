@@ -1,0 +1,10 @@
+<span *ngFor="let newField of newFields; let index = index">
+    <p>{{newField}} <button (click)="deleteItem(index)" type="delete" class="btn btn-danger"> Delete </button>
+    </p>
+</span>
+
+<br>
+<div>
+    <button class="btn btn-primary " style="font-size:36px" (click)="increment()">+</button> &nbsp;
+    <button class="btn btn-danger " style="font-size:36px" (click)="decrement()">-</button> &nbsp;
+</div>

@@ -1,0 +1,17 @@
+<body [ngClass]="{'dark-mode': newFields.length >= 7}">
+
+    <app-header></app-header>
+    <hr>
+
+    <div class="container">
+        <input [(ngModel)]="newTask" (keyup.enter)="addItem()" [disabled]="newFields.length >= 7" type="text"
+            style="width: 25%;">
+        <p *ngIf="newFields.length >= 7">Items are full.</p>&nbsp;
+
+        <button (click)="addItem()" [disabled]="newFields.length >= 7" class="btn btn-success"> ADD </button>
+        <br>
+        <app-comp1 [newFields]="newFields" (delete)="onDelete($event)">
+        </app-comp1>
+
+    </div>
+</body>
